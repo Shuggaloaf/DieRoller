@@ -1,5 +1,5 @@
-let screenHeight = window.innerHeight - 310;
-let screenWidth = 250//window.innerWidth;
+let screenTop = window.innerHeight - 400;
+let screenLeft = (window.innerWidth * .05);
 
 async function rollFormula(formula) {
  let roll = await new Roll(formula).evaluate();
@@ -97,4 +97,4 @@ new Dialog({
   
  },
  default: "d20"
-},{height:220,width:550,left:screenWidth,top:screenHeight}).render(true);
+},{height:220,width:550,left:screenLeft,top:screenTop}).render(true);
